@@ -1,0 +1,24 @@
+using System;
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите стоимость покупки: ");
+            double n = Convert.ToInt32(Console.ReadLine());
+
+            if (n > 500)
+            {
+                if (n > 1000)
+                {
+                    n *= 0.95;
+                }
+                else
+                    n *= 0.97;
+            }
+            Console.WriteLine("Стоимость покупки = " + n);
+        }
+    }
+}
