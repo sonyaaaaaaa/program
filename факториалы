@@ -1,0 +1,27 @@
+ using System;
+
+namespace c55
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Console.Write("n = ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int factor = 1;
+            int i = 0;
+            do
+            {
+                i++;
+                factor *= i;
+            } while (i != n);
+
+
+
+
+            Console.WriteLine($"{n}! = {factor}");
+        }
+    }
+}
+   
+
