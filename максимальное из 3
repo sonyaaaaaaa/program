@@ -1,0 +1,29 @@
+using System;
+namespace vjuhvji{
+  class Program
+  {
+      static void Main(string[] args)
+      {
+          Console.Write("x1 = ");
+          double x1 = Convert.ToDouble(Console.ReadLine());
+          Console.Write("x2 = ");
+          double x2 = Convert.ToDouble(Console.ReadLine());
+          Console.Write("x3 = ");
+          double x3 = Convert.ToDouble(Console.ReadLine());
+
+          var max = x1;
+          if (max < x2)
+          {
+              max = x2;
+          }
+
+          if (max < x3)
+          {
+              max = x3;
+          }
+
+          Console.WriteLine($"Максимальное из чисел {x1}, {x2}, {x3} равно {max}");
+         
+      }
+  }
+}
