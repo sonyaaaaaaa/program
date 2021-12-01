@@ -1,0 +1,41 @@
+using System;
+
+namespace ссс
+{
+class MainClass
+{
+public static void Main(string[] args)
+{
+int n = Convert.ToInt32(Console.ReadLine());
+
+int[] arr = new int[n];
+
+int max = int.MinValue;
+int min = int.MaxValue;
+
+
+for (int i = 0; i < n; i++)
+{
+arr[i] = Convert.ToInt32(Console.ReadLine());
+max = Math.Max(max, arr[i]);
+min = Math.Min(min, arr[i]);
+
+
+}
+for (int i = 0; i < n; i++)
+{
+if (arr[i] == max)
+{
+arr[i] = min;
+}
+else if (arr[i] == min)
+{
+arr[i] = max;
+}
+Console.WriteLine(arr[i]);
+}
+}
+
+
+}
+}
