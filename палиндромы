@@ -1,0 +1,26 @@
+using System;
+
+namespace ииииии
+{
+class MainClass
+{
+public static void Main(string[] args)
+{
+string a = Console.ReadLine();
+a = a.ToLower().Replace(" ","");
+bool result = true;
+for (int i = 0; i < a.Length; i++)
+{
+if (a[i] != a[a.Length - i-1])
+{
+result = false;
+
+}
+
+}
+
+Console.WriteLine(result);
+}
+
+}
+}
