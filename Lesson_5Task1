@@ -1,0 +1,21 @@
+using System;
+
+namespace ииииии
+{
+class MainClass
+{
+public static void Main(string[] args)
+{
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+Perimeter(a, b, c);
+}
+
+static void Perimeter (int a,int b, int c)
+{
+
+Console.WriteLine(a + b + c);
+}
+}
+}
