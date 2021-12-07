@@ -1,0 +1,28 @@
+using System;
+
+namespace ииииии
+{
+class MainClass
+{
+public static void Main(string[] args)
+{
+string a = Console.ReadLine();
+string b = String.Empty;
+string upper = a.ToUpper();
+b += upper[0];
+for (int i = 1; i < a.Length; i++)
+{
+if (a[i - 1]==' ')
+{
+b += upper[i];
+
+}
+else { b += a[i]; }
+}
+Console.WriteLine(b);
+
+}
+
+
+}
+}
